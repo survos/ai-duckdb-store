@@ -1,0 +1,58 @@
+{
+    "name": "survos/ai-duckdb-store",
+    "description": "DuckDB vector store bridge for Symfony AI",
+    "license": "MIT",
+    "type": "library",
+    "keywords": [
+        "ai",
+        "bridge",
+        "duckdb",
+        "store",
+        "vector"
+    ],
+    "authors": [
+        {
+            "name": "Christopher Hertel",
+            "email": "mail@christopher-hertel.de"
+        },
+        {
+            "name": "Oskar Stark",
+            "email": "oskarstark@googlemail.com"
+        },
+        {
+            "name": "Symfony Community",
+            "homepage": "https://symfony.com/contributors"
+        },
+        {
+            "name": "Tac Tacelosky",
+            "email": "tacman@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.5",
+        "ext-pdo": "*",
+        "symfony/ai-platform": "^1.0@beta",
+        "symfony/ai-store": "^1.0@beta",
+        "ext-pdo_duckdb": "*"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^2.1",
+        "phpstan/phpstan-phpunit": "^2.0",
+        "phpunit/phpunit": "^11.5.53"
+    },
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "Survos\\Ai\\DuckDb\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Survos\\Ai\\DuckDb\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "prefer-stable": true
+}
